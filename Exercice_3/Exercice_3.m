@@ -13,7 +13,7 @@ X = [6; 5; 4];
 Y = A*X;
 
 % Pour trouver les tailles des populations en 2025 il suffit de projeter 
-% les tailles des populations de 2020 vers 2025 en résolvant cinq fois de
+% les tailles des populations de 2020 vers 2025 en resolvant cinq fois de
 % suite l'equation Z = A*Y avec Z le vecteur contenant les tailles des
 % populations suivant les projections successives
 % Initialisons Z en lui affectant le vecteur Y
@@ -25,7 +25,7 @@ for i = 1:5
     
 end
 
-% Enregistrons les tailles calculées dans la premiere partie de l'exercice
+% Enregistrons les tailles calculees dans la premiere partie de l'exercice
 Y_2020 = Y;
 Z_2025 = Z;
 
@@ -40,17 +40,17 @@ Y = [4.2; 4.4; 3.3];
 X = inv(A)*Y;
 
 % Pour trouver les tailles des populations en 2018 il suffit de projeter
-% les tailles de populations de 2019 vers 2018 en résolvant 
-% l'équation W = inv(A)*X car X = A*W avec W le vecteur contenant les
+% les tailles de populations de 2019 vers 2018 en resolvant 
+% l'equation W = inv(A)*X car X = A*W avec W le vecteur contenant les
 % tailles des populations en 2018 
 W = inv(A)*X;
 
-% Enregistrons les tailles calculées dans la deuxieme partie de l'exercice
+% Enregistrons les tailles calculees dans la deuxieme partie de l'exercice
 X_2019 = X;
 W_2018 = W;
 
-% Affichons les reponses apportées a la deuxieme partie 
-disp('Pour la question 3.a nous remarquons que les tailles des populations en 2019 apres initialisation de Y a [4.2; 4.4; 3.3] restent les memes car c''est les memes valeurs qu''on a reussi a calculer dans la premiere question. Donc on peut dire que le modele de dynamique de populations fonctionne meme en sens inverse. On remarque aussi que les tailles des populations ont chute en 2020 par rapport a celles de 2019.')
-disp('Pour la question 3.b nous remarquons que les tailles des deux premieres populations sont inferieures a celles de 2019 mais pas pour la taille de la troisieme population qui, pour elle, est beaucoup plus importante !! Donc on peut dire que la croissance des deux premieres populations avait repris son cours lors de l''annee 2019 avant de commencer a baisse contrairement a la taille de la troisieme population qui, pour elle, etait importante en 2018 puis decroit continuellement')
+% Affichons les reponses apportees a la deuxieme partie 
+disp('Pour la question 3.a nous remarquons que les tailles des populations en 2019, apres initialisation de Y a [4.2; 4.4; 3.3] (resultat de Y_2020), sont les memes que celles utilisees au debut de l''exercice. Donc on peut dire que le modele de dynamique de populations fonctionne aussi en sens inverse. On remarque aussi que les tailles des populations ont toutes chute en 2020 par rapport a celles qu''on avait en 2019.')
+disp('Pour la question 3.b nous remarquons que les tailles des deux premieres populations en 2018 sont inferieures a celles qu’on avait en 2019 mais pas pour la taille de la troisieme population qui, pour elle, etait beaucoup plus importante en 2018 !! Donc on peut dire que la croissance des deux premieres populations a augmente en 2019 avant de commencer a baisse pour le reste des annees, contrairement a la taille de la troisieme population qui, pour elle, etait importante en 2018 puis commence a decroitre continuellement a partir de 2019')
 
 end
